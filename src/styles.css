@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e3edf7;
+  color: #555;
+  text-align: center;
+  min-width: 300px;
+}
+
+a {
+  color: inherit;
+}
+
+#root {
+  height: calc(100vh - 60px);
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#timer-label span {
+  position: absolute;
+  top: 43px;
+  border-bottom: 1px solid;
+}
+
+.block-button > div {
+  box-shadow: 6px 6px 10px -1px rgb(0 0 0 / 15%),
+    -6px -6px 10px -1px rgb(255 255 255 / 35%);
+  border-radius: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 10px;
+  overflow: hidden;
+}
+
+.block-button button {
+  display: grid;
+  place-items: center;
+  border: unset;
+  background-color: rgba(152, 50, 238, 0.05);
+  padding: 10px;
+  height: 50px;
+  width: 60px;
+  cursor: pointer;
+}
+
+button svg {
+  color: #555;
+}
+
+.label span {
+  font-size: 12px;
+}
+
+.block-button .block-btn {
+  width: 130px;
+  margin: auto;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+  text-align: center;
+  padding: 20px 15px;
+}
